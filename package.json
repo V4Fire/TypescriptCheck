@@ -1,0 +1,24 @@
+{
+  "name": "typescript-checker",
+  "version": "1.0.7",
+  "description": "Tool to check typescript errors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonkalol/typescript-checker.git"
+  },
+  "author": "bonkalol@list.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonkalol/typescript-checker/issues"
+  },
+  "homepage": "https://github.com/bonkalol/typescript-checker#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "typescript": "^3.9.3",
+    "upath": "^1.2.0"
+  }
+}
