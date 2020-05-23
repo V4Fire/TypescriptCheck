@@ -1,7 +1,7 @@
 const
 	ts = require("typescript"),
 	fs = require("fs"),
-	path = require('path'),
+	path = require('upath'),
 	process = require('process'),
 	core = require('@actions/core');
 
