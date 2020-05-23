@@ -1,6 +1,6 @@
 {
-  "name": "typescript-checker",
-  "version": "1.0.7",
+  "name": "@v4fire/typescript-check",
+  "version": "1.0.0",
   "description": "Tool to check typescript errors",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bonkalol/typescript-checker.git"
+    "url": "git+https://github.com/v4fire/typescriptCheck.git"
   },
   "author": "bonkalol@list.ru",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bonkalol/typescript-checker/issues"
+    "url": "https://github.com/v4fire/typescriptCheck/issues"
   },
-  "homepage": "https://github.com/bonkalol/typescript-checker#readme",
+  "homepage": "https://github.com/v4fire/typescriptCheck#readme",
   "dependencies": {
     "@actions/core": "^1.2.4",
     "typescript": "^3.9.3",
