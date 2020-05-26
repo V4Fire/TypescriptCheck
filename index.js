@@ -57,6 +57,10 @@ for (let i = 0; i < result.length; i++) {
 		d = result[i];
 
 	if (d.category === ts.DiagnosticCategory.Error) {
+		if (d.file.fileName.includes('node_modules')) {
+			continue;
+		}
+
 		core.error(ts.formatDiagnostic(d, formatConfig));
 		totalErrors++;
 	}
