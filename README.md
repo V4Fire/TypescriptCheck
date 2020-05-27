@@ -1,6 +1,6 @@
 # typescript-checker
 
-Run:
+### Run:
 
 ```
 npm install @v4fire/typescript-check
@@ -43,4 +43,10 @@ jobs:
 
       - name: Typecheck
         run: node node_modules/@v4fire/typescript-check/index.js
+```
+
+### Setting up a CLI logger
+
+```
+node ./node_modules/@v4fire/typescript-check/index.js --logger cli
 ```
