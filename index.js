@@ -3,6 +3,7 @@ const
 	fs = require("fs"),
 	path = require('upath'),
 	process = require('process'),
+	arg = require('arg'),
 	log = require('./log');
 
 const
@@ -52,6 +53,9 @@ log.info('Diagnostic complete');
 let
 	totalErrors = 0;
 
+const
+	maxErrors = arg({'--max-errors': Number}, {permissive: true})['--max-errors'] || 0;
+
 for (let i = 0; i < result.length; i++) {
 	const
 		d = result[i];
@@ -74,6 +78,6 @@ for (let i = 0; i < result.length; i++) {
 	}
 }
 
-if (totalErrors) {
+if (totalErrors > maxErrors) {
 	log.setFailed(`Errors found: ${totalErrors}`);
 }

@@ -50,3 +50,9 @@ jobs:
 ```
 node ./node_modules/@v4fire/typescript-check/index.js --logger cli
 ```
+
+### Setting up errors threshold
+
+```
+node ./node_modules/@v4fire/typescript-check/index.js --max-errors 70
+```
