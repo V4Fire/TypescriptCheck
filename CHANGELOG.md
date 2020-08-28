@@ -13,4 +13,6 @@ _Note: Gaps between patch versions are faulty, broken or test releases._
 
 ## v1.2.0 (2020-08-28)
 
+#### :rocket: New Feature
+
 * Added the ability to set the number of allowed errors
