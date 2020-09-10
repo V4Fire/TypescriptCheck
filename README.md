@@ -4,7 +4,7 @@
 
 ```
 npm install @v4fire/typescript-check
-node ./node_modules/@v4fire/typescript-check/index.js
+npx @v4fire/typescript-check
 ```
 
 Usage with github actions:
@@ -42,17 +42,17 @@ jobs:
         run: npx gulp build:tsconfig
 
       - name: Typecheck
-        run: node node_modules/@v4fire/typescript-check/index.js
+        run: npx @v4fire/typescript-check
 ```
 
 ### Setting up a CLI logger
 
 ```
-node ./node_modules/@v4fire/typescript-check/index.js --logger cli
+npx @v4fire/typescript-check --logger cli
 ```
 
 ### Setting up errors threshold
 
 ```
-node ./node_modules/@v4fire/typescript-check/index.js --max-errors 70
+npx @v4fire/typescript-check --max-errors 70
 ```

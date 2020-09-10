@@ -11,6 +11,19 @@ Changelog
 
 _Note: Gaps between patch versions are faulty, broken or test releases._
 
+## v1.3.0 (2020-09-10)
+
+#### :rocket: New Feature
+
+* Simplify running the checker:
+  ```
+  npx @v4fire/typescript-check
+  ```
+  instead of
+  ```
+  node ./node_modules/@v4fire/typescript-check/index.js
+  ```
+
 ## v1.2.0 (2020-08-28)
 
 #### :rocket: New Feature

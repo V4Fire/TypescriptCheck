@@ -4,6 +4,7 @@
   "description": "Tool to check typescript errors",
   "homepage": "https://github.com/v4fire/typescriptCheck#readme",
   "main": "index.js",
+  "bin": "index.js",
   "license": "MIT",
   "author": "bonkalol@list.ru",
   "scripts": {

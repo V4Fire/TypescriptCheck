@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const
 	ts = require("typescript"),
 	fs = require("fs"),
