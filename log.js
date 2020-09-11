@@ -12,28 +12,27 @@ class AbstractLogger {
 	info(...args) {}
 
 	/**
-	 * Logs error
+	 * Logs an error
 	 * @param {...any} args
 	 */
 	error(...args) {}
 
 	/**
-	 * Logs warning
+	 * Logs a warning
 	 * @param  {...any} args
 	 */
 	warning(...args) {}
 
 	/**
-	 * Sets process as failed and logs the specified error message
+	 * Sets a process as failed and logs the specified error message
 	 * @param  {...any} args
 	 */
 	setFailed(...args) {}
 }
 
 class Logger extends AbstractLogger {
-
 	/**
-	 * Current selected log engine
+	 * Current log engine
 	 */
 	#engine;
 

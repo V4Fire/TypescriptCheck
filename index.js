@@ -40,17 +40,17 @@ const formatConfig = {
 	getCurrentDirectory: ts.sys.getCurrentDirectory
 }
 
-log.info('"tsconfig.json" successfully parsed');
+log.info('"tsconfig.json" has been successfully parsed');
 
 const
 	typescriptProgram = ts.createProgram(config.fileNames, config.options);
 
-log.info('Typescript program created');
+log.info('Typescript program has been created');
 
 const
 	result = ts.getPreEmitDiagnostics(typescriptProgram);
 
-log.info('Diagnostic complete');
+log.info('Diagnostic has been completed');
 
 let
 	totalErrors = 0;
