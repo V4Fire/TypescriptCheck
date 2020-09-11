@@ -15,14 +15,17 @@ _Note: Gaps between patch versions are faulty, broken or test releases._
 
 #### :rocket: New Feature
 
-* Simplify running the checker:
-  ```
-  npx @v4fire/typescript-check
-  ```
-  instead of
-  ```
-  node ./node_modules/@v4fire/typescript-check/index.js
-  ```
+* Simplified running the checker:
+
+```bash
+npx @v4fire/typescript-check
+```
+
+instead of
+
+```bash
+node ./node_modules/@v4fire/typescript-check/index.js
+```
 
 ## v1.2.0 (2020-08-28)
 
