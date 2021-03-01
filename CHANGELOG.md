@@ -11,6 +11,12 @@ Changelog
 
 _Note: Gaps between patch versions are faulty, broken or test releases._
 
+## v1.3.2 (2021-03-02)
+
+#### :house: Internal
+
+* Improved information about found errors
+
 ## v1.3.1 (2020-11-06)
 
 #### :house: Internal
