@@ -13,7 +13,7 @@ _Note: Gaps between patch versions are faulty, broken or test releases._
 
 ## v1.3.2 (2021-03-02)
 
-#### :house: Internal
+#### :rocket: New Feature
 
 * Improved information about found errors
 
