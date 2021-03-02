@@ -81,5 +81,8 @@ for (let i = 0; i < result.length; i++) {
 }
 
 if (totalErrors > maxErrors) {
-	log.setFailed(`Errors found: ${totalErrors}`);
+	log.setFailed(`Errors found: ${totalErrors}${maxErrors > 0 ? `. Errors allowed: ${maxErrors}` : ''}`);
+
+} else if (maxErrors > 0) {
+	log.warning(`Errors found: ${totalErrors}. Errors allowed: ${maxErrors}`);
 }
