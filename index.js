@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const
-	ts = require("typescript"),
-	fs = require("fs"),
+	ts = require('typescript'),
+	fs = require('fs'),
 	path = require('upath'),
 	process = require('process'),
 	arg = require('arg'),
