@@ -9,15 +9,20 @@ const
 	log = require('./log');
 
 const
+	defaultTypescriptConfigFilename = 'tsconfig.json';
+
+const
 	cwd = process.cwd(),
-	pathToTypescriptConfig = path.join(cwd, 'tsconfig.json'),
+	cliArgs = arg({'--tsconfig-filename': String, '--max-errors': Number}, {permissive: true}),
+	typescriptConfigFilename = cliArgs['--tsconfig-filename'] || defaultTypescriptConfigFilename,
+	pathToTypescriptConfig = path.join(cwd, typescriptConfigFilename),
 	typescriptConfigExists = fs.existsSync(pathToTypescriptConfig);
 
 let
 	tsconfigFile;
 
 if (!typescriptConfigExists) {
-	log.setFailed(`Config file "tsconfig.json" doesn't exists in ${cwd}`);
+	log.setFailed(`Config file ${typescriptConfigFilename} doesn't exists in ${cwd}`);
 
 } else {
 	tsconfigFile = ts.readJsonConfigFile(pathToTypescriptConfig, (path) => fs.readFileSync(path, {encoding: 'utf-8'}));
@@ -40,7 +45,7 @@ const formatConfig = {
 	getCurrentDirectory: ts.sys.getCurrentDirectory
 }
 
-log.info('"tsconfig.json" has been successfully parsed');
+log.info(`${typescriptConfigFilename} has been successfully parsed`);
 
 const
 	typescriptProgram = ts.createProgram(config.fileNames, config.options);
@@ -56,7 +61,7 @@ let
 	totalErrors = 0;
 
 const
-	maxErrors = arg({'--max-errors': Number}, {permissive: true})['--max-errors'] || 0;
+	maxErrors = cliArgs['--max-errors'] || 0;
 
 for (let i = 0; i < result.length; i++) {
 	const
