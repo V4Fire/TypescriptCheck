@@ -56,3 +56,9 @@ npx @v4fire/typescript-check --logger cli
 ```
 npx @v4fire/typescript-check --max-errors 70
 ```
+
+### Specifying a custom tsconfig file name (`tsconfig.json` is used by default)
+
+```
+npx @v4fire/typescript-check --tsconfig-filename client.tsconfig.json
+```
