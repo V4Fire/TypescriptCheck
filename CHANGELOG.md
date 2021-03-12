@@ -11,6 +11,12 @@ Changelog
 
 _Note: Gaps between patch versions are faulty, broken or test releases._
 
+## v1.3.3 (2021-03-06)
+
+#### :rocket: New Feature
+
+* Added ability to specify a custom typescript config filename
+
 ## v1.3.2 (2021-03-02)
 
 #### :rocket: New Feature
