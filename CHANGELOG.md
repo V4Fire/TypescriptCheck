@@ -11,6 +11,12 @@ Changelog
 
 _Note: Gaps between patch versions are faulty, broken or test releases._
 
+## v1.3.4 (2021-09-23)
+
+#### :bug: Bug Fix
+
+* Fixed bug with new Typescript 4.4
+
 ## v1.3.3 (2021-03-06)
 
 #### :rocket: New Feature
