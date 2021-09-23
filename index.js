@@ -32,7 +32,16 @@ const config = ts.parseJsonSourceFileConfigFileContent(
 	tsconfigFile,
 	{
 		useCaseSensitiveFileNames: true,
-		readDirectory: ts.sys.readDirectory,
+
+		// Temporary fix of the undocumented breaking change in Typescript 4.4
+		// https://github.com/microsoft/TypeScript/issues/45990
+		readDirectory: (relativePath, ...restArgs) => {
+			const
+				absolutePath = path.resolve(relativePath);
+
+			return ts.sys.readDirectory(absolutePath, ...restArgs);
+		},
+
 		readFile: ts.sys.readFile,
 		fileExists: ts.sys.fileExists
 	},
