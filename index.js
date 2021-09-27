@@ -8,6 +8,8 @@ const
 	arg = require('arg'),
 	log = require('./log');
 
+log.info(`Using Typescript ${ts.version}`);
+
 const
 	defaultTypescriptConfigFilename = 'tsconfig.json';
 
