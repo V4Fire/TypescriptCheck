@@ -11,6 +11,12 @@ Changelog
 
 _Note: Gaps between patch versions are faulty, broken or test releases._
 
+## v1.4.1 (2021-12-13)
+
+#### :house: Internal
+
+* Moved `typescript` to peerDependencies
+
 ## v1.4.0 (2021-09-27)
 
 #### :rocket: New Feature
