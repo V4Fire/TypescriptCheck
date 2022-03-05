@@ -1,6 +1,6 @@
 {
   "name": "@v4fire/typescript-check",
-  "version": "1.5.0",
+  "version": "1.4.2",
   "description": "Tool to check typescript errors",
   "homepage": "https://github.com/v4fire/typescriptCheck#readme",
   "main": "index.js",
