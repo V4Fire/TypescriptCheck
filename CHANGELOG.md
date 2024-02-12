@@ -11,6 +11,12 @@ Changelog
 
 _Note: Gaps between patch versions are faulty, broken or test releases._
 
+## v1.4.3 (2024-02-12)
+
+#### :bug: Bug Fix
+
+* Added `d.file != null` check to fix `TypeError: Cannot read properties of undefined (reading 'fileName')`
+
 ## v1.4.1 (2021-12-13)
 
 #### :house: Internal
